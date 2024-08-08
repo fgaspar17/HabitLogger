@@ -5,8 +5,7 @@ namespace HabitLoggerLibrary;
 
 public class SetupDatabase
 {
-    private const string ConnectionString = "Data Source=habit.db";
-    
+
     public SetupDatabase()
     {
         
@@ -14,20 +13,28 @@ public class SetupDatabase
 
     public void InitializeDatabase()
     {
-        using (SqliteConnection connection = new SqliteConnection(ConnectionString))
+        try
         {
-            connection.Open();
+            using (SqliteConnection connection = new SqliteConnection(Config.ConnectionString))
+            {
+                connection.Open();
 
-            SqliteCommand cmd = connection.CreateCommand();
-            cmd.CommandText = @"CREATE TABLE IF NOT EXISTS ""DrinkWater"" (
+                SqliteCommand cmd = connection.CreateCommand();
+                cmd.CommandText = @"CREATE TABLE IF NOT EXISTS ""DrinkWater"" (
 	                            ""Id""	INTEGER NOT NULL,
 	                            ""Day""	INTEGER NOT NULL,
 	                            ""Quantity""	INTEGER NOT NULL,
 	                            PRIMARY KEY(""Id"" AUTOINCREMENT)
                                 );";
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            connection.Close();
+                connection.Close();
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw new Exception($"An error ocurred: {ex.Message}");
         }
     }
 }
