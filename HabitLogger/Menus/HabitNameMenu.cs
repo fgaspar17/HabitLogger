@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HabitLogger
+namespace HabitLogger.Menus
 {
-    public class DayMenu : IMenu
+    public class HabitNameMenu : IMenu
     {
         public string GetMenu()
         {
             StringBuilder sbMenu = new StringBuilder();
 
-            sbMenu.AppendLine("Introduce a Day format (yyyy-MM-dd): ");
+            sbMenu.AppendLine("Introduce a Name for the Habit: ");
 
             return sbMenu.ToString();
         }

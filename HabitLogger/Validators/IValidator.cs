@@ -8,6 +8,6 @@ namespace HabitLogger
 {
     public interface IValidator<T>
     {
-        (bool, T) Validate(string input);
+        (bool, T) Validate(string? input);
     }
 }

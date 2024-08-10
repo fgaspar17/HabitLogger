@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace HabitLogger
 {
-    public class DayMenu : IMenu
+    public class HabitIdMenu : IMenu
     {
         public string GetMenu()
         {
             StringBuilder sbMenu = new StringBuilder();
 
-            sbMenu.AppendLine("Introduce a Day format (yyyy-MM-dd): ");
+            sbMenu.AppendLine("Choose a Habit Id: ");
 
             return sbMenu.ToString();
         }
