@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HabitLogger
 {
-    public enum MainMenuOptions { Quit, Create, Update, Delete, Show }
+    public enum MainMenuOptions { Quit, Create, Update, Delete, Show, Reports, HabitMenu }
 
     public class MainMenu : IMenu
     {
@@ -20,6 +20,8 @@ namespace HabitLogger
             sbMenu.AppendLine("2. Update a record");
             sbMenu.AppendLine("3. Delete a record");
             sbMenu.AppendLine("4. Show all records");
+            sbMenu.AppendLine("5. Reports");
+            sbMenu.AppendLine("6. Show habit management menu");
 
             return sbMenu.ToString();
         }

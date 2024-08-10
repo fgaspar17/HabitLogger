@@ -9,7 +9,7 @@ namespace HabitLoggerLibrary
     public class HabitModel
     {
         public int Id { get; set; }
-        public int Day { get; set; }
+        public DateTime Day { get; set; }
         public int Quantity { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HabitLogger.Validators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,16 @@ namespace HabitLogger
             if(typeof(T).IsEnum)
             {
                 return (IValidator<T>)Activator.CreateInstance(typeof(EnumValidator<>).MakeGenericType(typeof(T)));
+            }
+
+            if(typeof (T) == typeof(string))
+            {
+                return (IValidator<T>)new StringValidator();
+            }
+
+            if(typeof(T) == typeof(DateTime))
+            {
+                return (IValidator<T>)new DateTimeValidator();
             }
 
             throw new NotImplementedException($"There's no validator for {typeof(T)}");

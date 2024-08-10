@@ -5,15 +5,14 @@ using HabitLoggerLibrary;
 SetupDatabase setupDatabase = new SetupDatabase();
 setupDatabase.InitializeDatabase();
 
+#if DEBUG
+//setupDatabase.SeedData();
+#endif
+
 bool continueRunning = true;
 
 UserInterface userInterface = new UserInterface();
-MainMenu mainMenu = new MainMenu();
 
-
-while (continueRunning)
-{
-	MainMenuOptions mainMenuOptionPicked = userInterface.ShowMenu<MainMenuOptions>(mainMenu);
-    userInterface.HandleMenuOption(mainMenuOptionPicked, ref continueRunning);
-}
+userInterface.DisplayHabitMenu();
+userInterface.DisplayMainMenu();
 
