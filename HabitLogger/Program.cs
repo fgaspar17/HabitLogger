@@ -6,7 +6,7 @@ SetupDatabase setupDatabase = new SetupDatabase();
 setupDatabase.InitializeDatabase();
 
 #if DEBUG
-//setupDatabase.SeedData();
+setupDatabase.SeedData();
 #endif
 
 bool continueRunning = true;
