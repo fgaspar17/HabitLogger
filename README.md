@@ -42,5 +42,5 @@ Console based application to track your progress in habits per day. Developed us
 - Code reusability, both generics and interfaces are new to me and I'm going to need them for a high quality code.
  #  Resources used
  - StackOverflow posts
- - [Link Text](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=net-cli "Optional Title")
-  
+ - [Microsoft Docs Sqlite](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=net-cli)
+ - [Sqlite Window Functions](https://sqlite.org/windowfunctions.html)
