@@ -14,18 +14,18 @@ Console based application to track your progress in habits per day. Developed us
 - [x] Your project needs to contain a Read Me file where you'll explain how your app works. Here's a nice example:
 # Features
 - SQLite database connection
- - The data is stored in a db file which I connect to perform CRUD operations.
- - If database doesn't exist it creates one.
- - In DEBUG mode it creates an additional habit with 100 random generated records.
+  - The data is stored in a db file which I connect to perform CRUD operations.
+  - If database doesn't exist it creates one.
+  - In DEBUG mode it creates an additional habit with 100 random generated records.
 - Console based UI to navigate via keypress
    - ![image](https://github.com/user-attachments/assets/66f57057-f657-4f26-bac7-17382c6b9f7e)
    - ![image](https://github.com/user-attachments/assets/5b91c9b2-b386-4132-83ab-a6158b73f1b2)
 - CRUD operations
- - From the first menu you can create, show or delete habits.
- - From the second menu you can create, update, show or delete, to choose an option you enter the number, for the day you enter the date in format yyyy-MM-dd.
- - Input are validated to be the requested type.
+  - From the first menu you can create, show or delete habits.
+  - From the second menu you can create, update, show or delete, to choose an option you enter the number, for the day you enter the date in format yyyy-MM-dd.
+  - Input are validated to be the requested type.
 - Basic report functionality
-  - ![image](https://github.com/user-attachments/assets/beb5f72b-3c3c-44b3-ad07-5d04e1c7e785)
+   - ![image](https://github.com/user-attachments/assets/beb5f72b-3c3c-44b3-ad07-5d04e1c7e785)
 # Challenges
  - I haven't worked with embedded database before, so I learnt SQLite while working in the project, also the package from Microsoft to interact with SQLite was a challenge.
  - Generating seed data for dates but thanks to the DateTime class my problem were resolved.
