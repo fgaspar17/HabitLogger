@@ -18,8 +18,8 @@ Console based application to track your progress in habits per day. Developed us
  - If database doesn't exist it creates one.
  - In DEBUG mode it creates an additional habit with 100 random generated records.
 - Console based UI to navigate via keypress
-   -![image](https://github.com/user-attachments/assets/66f57057-f657-4f26-bac7-17382c6b9f7e)
-   -![image](https://github.com/user-attachments/assets/5b91c9b2-b386-4132-83ab-a6158b73f1b2)
+   - ![image](https://github.com/user-attachments/assets/66f57057-f657-4f26-bac7-17382c6b9f7e)
+   - ![image](https://github.com/user-attachments/assets/5b91c9b2-b386-4132-83ab-a6158b73f1b2)
 - CRUD operations
  - From the first menu you can create, show or delete habits.
  - From the second menu you can create, update, show or delete, to choose an option you enter the number, for the day you enter the date in format yyyy-MM-dd.
@@ -36,5 +36,11 @@ Console based application to track your progress in habits per day. Developed us
 - Reducing code duplication for different types thanks to generics with constraints.
 - Creating new git branches for features, so I focus on one thing at time.
 - Abstract factory pattern to get the right input validator.
-
+# Areas to Improve
+- I want to keep learning about design patterns and improve on organizing my code.
+- I was able to write a query using ROW_NUMBER(), window functions seem really powerful and a nice area to discover.
+- Code reusability, both generics and interfaces are new to me and I'm going to need them for a high quality code.
+ #  Resources used
+ - StackOverflow posts
+ - [Link Text](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=net-cli "Optional Title")
   
